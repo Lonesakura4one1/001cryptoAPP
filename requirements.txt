@@ -1,0 +1,50 @@
+asgiref==3.11.0
+Django==6.0
+django-cors-headers==4.9.0
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+drf-yasg==1.21.15
+PyJWT==2.10.1
+sqlparse==0.5.5
+requests==2.32.5
+
+# Security & Authentication
+django-oauth-toolkit==1.7.1
+qrcode==7.4.2
+pyotp==2.9.0
+cryptography==42.0.8
+python-dotenv==1.0.1
+
+# Database & Caching
+redis==5.0.1
+psycopg2-binary==2.9.7
+django-redis==5.4.0
+
+# Background Tasks
+celery==5.3.4
+flower==2.0.1
+
+# HD Wallet & Crypto
+bitcoinlib==0.6.13
+ecdsa==0.18.0
+mnemonic==0.20
+bip32==5.0.0
+
+# WebSocket Support
+channels==4.1.0
+channels-redis==4.1.0
+
+# Image Processing
+pillow==10.1.0
+
+# Production Server
+gunicorn==21.2.0
+whitenoise==6.6.0
+
+# Monitoring & Error Tracking
+sentry-sdk==1.40.6
+psutil==5.9.8
+
+# Development Tools
+django-debug-toolbar==4.2.0
+django-extensions==3.2.3

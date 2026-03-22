@@ -1,0 +1,45 @@
+{
+  "name": "cleo",
+  "version": "1.0.0",
+  "description": "Complete cryptocurrency trading and wallet management platform - Cleo",
+  "scripts": {
+    "start": "./start.sh",
+    "start:dev": "./start-dev.sh",
+    "start:backend": "source venv/bin/activate && python manage.py runserver 0.0.0.0:8000",
+    "start:frontend": "cd cleo-web && npm run dev",
+    "setup": "chmod +x start.sh start-dev.sh && ./start.sh",
+    "install:all": "pip install -r requirements.txt && cd cleo-web && npm install",
+    "migrate": "source venv/bin/activate && python manage.py migrate",
+    "createsuperuser": "source venv/bin/activate && python manage.py createsuperuser",
+    "collectstatic": "source venv/bin/activate && python manage.py collectstatic --noinput",
+    "test:backend": "source venv/bin/activate && python manage.py test",
+    "test:frontend": "cd cleo-web && npm test",
+    "lint:backend": "source venv/bin/activate && flake8 backend/ --max-line-length=88 --ignore=E203,W503",
+    "lint:frontend": "cd cleo-web && npm run lint",
+    "build:frontend": "cd cleo-web && npm run build",
+    "clean": "find . -type d -name '__pycache__' -delete && find . -name '*.pyc' -delete && rm -rf cleo-web/.next",
+    "logs": "tail -f logs/backend.log logs/frontend.log"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "trading",
+    "wallet",
+    "blockchain",
+    "django",
+    "react",
+    "nextjs"
+  ],
+  "author": "Crypto Platform Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/cleo.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.8.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
