@@ -1,4 +1,4 @@
-# Cleo Trading Platform
+# 001cryptoAPP - Cleo Trading Platform
 
 An industry-standard cryptocurrency trading platform built with Django REST Framework, featuring advanced security, HD wallets, multi-signature support, and real-time trading engine.
 
@@ -346,3 +346,7 @@ MIT License - see LICENSE file for details
 ---
 
 **Note**: This platform is designed for educational and development purposes. For production use, ensure proper security audits and compliance with local regulations.
+=======
+# 001cryptoAPP
+Acrypto exchange platform
+>>>>>>> 754025aa5f65f9b060192013049ff303ddaab29c
